@@ -5,7 +5,7 @@ import (
 	"net/http"
 
 	"github.com/superbolang/goapi/api"
-	"github.com/superbolang/internal/tools"
+	"github.com/superbolang/goapi/internal/tools"
 	log "github.com/sirupsen/logrus"
 )
 
