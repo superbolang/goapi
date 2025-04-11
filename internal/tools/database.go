@@ -17,13 +17,13 @@ type CoinDetails struct {
 type DatabaseInterface interface {
 	GetUserLoginDetails(username string) *LoginDetails
 	GetUserCoins(username string) *CoinDetails
-	SetuoDatabase() error
+	SetupDatabase() error
 }
 
 func NewDatabase() (*DatabaseInterface, error) {
 	var database DatabaseInterface = &mockDB{}
 
-	var err error = database.SetuoDatabase()
+	var err error = database.SetupDatabase()
 	if err != nil {
 		log.Error(err)
 		return nil, err
